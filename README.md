@@ -1,11 +1,7 @@
 # chatty-devops-test
 
 ## Description
-this is a test repo for testing devops setup.
-
-    - you can use any automation tool to setup the infra like ansible, jenkins, etc. or you can do it manually.
-    - you can use any guide or tutorial to setup the infra.
-    - you can use any gpt tool to generate the commands.
+deploy a django application on a vm with the following requirements
 
 ## Infra Setup
 - [] share your public key with the hiring manager to get access to the VM.
@@ -37,3 +33,9 @@ note: the server should be running on port 8000
 - [] setup gunicorn and serve the application using gunicorn
 - [] setup supervisor to manage the gunicorn process
 - [] implement setup automation using ansible
+
+
+#### Note
+    - you can use any automation tool to setup the infra like ansible, jenkins, etc. or you can do it manually.
+    - you can use any guide or tutorial to setup the infra.
+    - you can use any gpt tool to generate the commands.
