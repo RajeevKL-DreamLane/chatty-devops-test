@@ -1,31 +1,39 @@
 # chatty-devops-test
 
 ## Description
-this is a test repo for testing devops setup
+this is a test repo for testing devops setup.
+
+    - you can use any automation tool to setup the infra like ansible, jenkins, etc. or you can do it manually.
+    - you can use any guide or tutorial to setup the infra.
+    - you can use any gpt tool to generate the commands.
 
 ## Infra Setup
-- [x] share your public key with the hiring manager to get access to the VM.
+- [] share your public key with the hiring manager to get access to the VM.
+- [] clone the project to the vm
 
-- [x] clone the project to the vm
-- [x] install the required version of python (refer the Pipfile)
-- [x] install pipenv to setup virtual environment for the project
-- [x] install the required packages (refer the Pipfile)
+#### part 1 - python and environment
+- [] install python3.11 `make sure to install python3.11-full`
+- [] install pipenv to setup virtual environment for the project `pipenv is pip package, do not install the linux package`
+- [] install the required pip packages (refer the Pipfile)
 
-- [x] setup docker with mysql
-- [x] create a database in mysql with name `chatty`, user `mysql` and password `chatty-password`
+#### part 2 - docker and mysql database
+- [] setup docker with mysql
+- [] create a database in mysql with name `chatty`, user `mysql` and password `chatty-password`
 
-- [x] to initialize the database, run the following command from the project directory
+#### part 3 - django application
+- [] to initialize the database, run the following command from the project directory
 ```pipenv run python manage.py migrate```
-- [x] to run the server, run the following command from the project directory
+- [] to run the server, run the following command from the project directory
 ```pipenv run python manage.py runserver```
 note: the server should be running on port 8000
 
-- [x] setup nginx to serve the application on port 80
-- [x] to check if the application is running, visit the following url
+#### part 4 - nginx
+- [] setup nginx to serve the application on port 80
+- [] to check if the application is running, visit the following url
 ```http://<ip-address>/admin```
 
 ### Bonus Points
-- [x] setup https with letsencrypt and serve the application on port 443
-- [x] setup gunicorn and serve the application using gunicorn
-- [x] setup supervisor to manage the gunicorn process
-- [x] implement setup automation using ansible
+- [] setup https with letsencrypt and serve the application on port 443
+- [] setup gunicorn and serve the application using gunicorn
+- [] setup supervisor to manage the gunicorn process
+- [] implement setup automation using ansible
